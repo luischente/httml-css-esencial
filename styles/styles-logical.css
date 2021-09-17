@@ -126,12 +126,15 @@ background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%) ;/*
     height: 4px;
     background:var(--white30);
     display: inline-block; */
-}
-blockquote{
+
+blockquote {
+    /* border: 1px solid red; */
     /* border: 1px solid red; */
     margin-block-start: 80px;
     margin-block-end: 63px;
-    background-color: var(--white10);
+    background: var(--white10);
+    /* background: var(--white); */
+    /* background-color: var(--white); */
     border-radius: 8px;
     line-height: 32px;
     font-size: 24px;
@@ -143,7 +146,7 @@ blockquote{
 }
 blockquote p, span{
     
-    color: var(--white30);
+    color: var(--white20);
 }
 .main hr{
     display: none;
