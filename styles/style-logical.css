@@ -39,10 +39,10 @@ body{
 a{
   color: var(--white30);
 }
-.header{
+/* .header{ */
   
 
-}
+/* } */
 .header-content{
   padding-inline: 20px;
   /* padding-inline: 20px; */
@@ -213,9 +213,9 @@ blockquote p, span{
   padding-inline: 16px;
   /* border: 1px solid blue; */
 }
-.slider{
+/* .slider{ */
   /* border: 1px solid red; */
-}
+/* } */
 .slider-container{
   /* block-size: 100px; */
   display: block;
