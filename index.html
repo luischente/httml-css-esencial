@@ -194,14 +194,44 @@
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                       </ul>
                     </section>
+                    <div class="section-content">
+                      <h2>Hola estos son algunos videos muy lindos</h2>
+                      <div class="slider">
+                        <scroll-container class="slider-container">
+                          <scroll-page class="slider-slide" id="video1">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/h5mzeVaFmXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </scroll-page>
+                          <scroll-page class="slider-slide" id="video2">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/h5mzeVaFmXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </scroll-page>
+                          <scroll-page class="slider-slide" id="video3">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/h5mzeVaFmXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-slit">
+                          <a href="#video1" class="slider-bullet"></a>
+                          <a href="#video2"class="slider-bullet"></a>
+                          <a href="#video3"class="slider-bullet"></a>
+                        </div>
+                      </div>
+                    </div>
                       <p>
           Si tienes alguna pregunta escríbeme a 
           <a href="mailto:luis_25meg@hotmail.com">luis_25meg@hotmail.com</a>
         </p>
-        </div>
-        </div> 
-     <!--  --> 
+            <div class="section-content">
+              <h2 >Ingresa a nuestro newsletter</h2>
+              <form action="#" class="form">
+                <input type="text" required placeholder="Nombre"> <!--Place holder nos permite poner un texto de apoyo al final del input-->
+                  <!--Para evitar que envien campos vacios  el atributo required y asi no dejara enviar sin haber llenado el elemento -->
+                <input type="email" required placeholder="Correo Electronico">
+                <!--Se expecifica con mas claridad de que es un email, con clase email-->
+                <input type="submit" value="Suscribirme"> <!--Para crear un boton con un input, se crea con la clase submit y con la clase 'Value' se cambia el contenido a decir-->
+              </form>
+            </div>
+
+          </div>
+        </div>  
       </main>  
-      
     </body>
-      </html> 
+  </html> 

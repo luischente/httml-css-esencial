@@ -40,13 +40,11 @@ a{
   color: var(--white30);
 }
 .header{
-  position: sticky;
-  inset-block-start: -45px;
+  
 
 }
 .header-content{
- position: relative; 
- inset-block-start: 65px;
+  padding-inline: 20px;
   /* padding-inline: 20px; */
   /* position: sticky; */
   /* inset-block-start: 0; */
@@ -61,12 +59,9 @@ h1{
 
 header{
   /* border: 1px solid red; */
+  margin-block-start: 20px;
   font-size: 14px;
   color: var(--white);
-  position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: -208px;
-  inline-size: 188px;
   /* margin-block-start:14px; */
   /* position: ; */
   /* top */
@@ -106,7 +101,9 @@ header details summary{
   /* font-weight: normal; */
 /* } */
 h1{
-  font-size: 60px;
+  font-size: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
 }
 h2{
   font-size: 2em;
@@ -146,7 +143,8 @@ p, span{
 .hero{
   /* background-image : linear-gradient(to top, rgba(255,255,255,.3), transparent), url(../img/pattern.png); */
 background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%) ;/*Nor permite dar un degrado en el fondo con una rotacion*/
-  height: 350px;
+  /* height: 350px; */
+  block-size: 50px;
   
 }
 .section-content img{
@@ -214,4 +212,89 @@ blockquote p, span{
 .main-content{
   padding-inline: 16px;
   /* border: 1px solid blue; */
+}
+.slider{
+  /* border: 1px solid red; */
+}
+.slider-container{
+  /* block-size: 100px; */
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;/*No deja que se vaya a la siguiente linea genera un scroll a su costado con ayuda del 'display'*/
+  font-size: 0
+}
+.video{
+
+  margin: 0;
+  /* border: 1px solid blue; */
+  display: inline-block;/*permite que un elemento pueda tener el ancho*/
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-slit{
+  /* border: 1px solid yellow; */
+  text-align: center;
+  margin-block-start: 10px;
+  
+}
+.slider-bullet{
+display:inline-block;
+inline-size: 15px;
+block-size: 15px;
+background: white;
+border-radius:50%;
+}
+.form input{
+/* width: 100%; */
+inline-size: 100%;/*tipo de bloc esta en linea*/
+border: 1px solid var(--white30);
+box-sizing: border-box;
+background: #251F24;/*Color de fondo del input*/
+border-radius: 8px;/*Tamallo de redondeo que se le hace a las horillas*/
+padding-inline:16px ;
+padding-block: 12px;/**/
+color: var(--white30);/*Color de la fuente*/
+font-size: 16px;/*Tipo de fuente que se le da a la letra*/
+display: block;/*Ahora son display block y va a pelar un colapso*/
+margin-block-end: 24px;
+}
+.form input::-webkit-input-placeholder{ /*Permite darle estilo a place-holder*/
+color:var(--white20);
+}
+
+.form input[type="submit"]/*Asi nos permite modificar los estilos de un boton imput*/
+{
+  background: #157EFB;
+  border: none;
+
+}
+
+@media screen and (min-width: 1366px){
+  .hero{
+    block-size: 350px;
+
+  }
+  .header{
+    position: sticky;
+    inset-block-start: -45px;
+
+  }
+  .header-content{
+   position: relative; 
+   inset-block-start: 65px;
+   padding-inline: 0;
+  }
+  header{
+   
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+  h1{
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
 }
